@@ -89,7 +89,7 @@ body {
 
 .full-width-header img {
     width: 100%;
-    height: auto;
+    height: 650px;
     display: block;
 }
 
@@ -1060,6 +1060,7 @@ p {
 /* Section Styling */
 .open-positions {
     text-align: center;
+
 }
 
 .open-positions h3 {
@@ -1379,13 +1380,130 @@ p {
 
 .image-section-Step {
     display: flex;
-    justify-content: center;
-    gap: 80px;
+    justify-content: left;
+    gap:0px;
 
 }
 
 .image-section-Step img {
-    width: auto;
+    width: 200px;
+    height: 250px;
+    max-width: 50%; /* Images will scale down responsively if needed */
+}
+
+/* Styling for Employee Insights Section */
+.employee-insights {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Testimonial Container Styling */
+.testimonial-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Image Wrapper Styling */
+.testimonial-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-image {
+    width: 670px; /* Adjust width as needed */
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Styling */
+.testimonial-text {
+    max-width: 700px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-text {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .testimonial-image {
+        width: 100px; /* Adjust smaller width for mobile */
+    }
+}
+
+.container-Step {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.text-section-Step {
+    display: flex; /* Use flexbox to align images and text horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Space between images and text */
+}
+
+.image-section-Step {
+    display: flex;
+    gap: 0px;
+}
+
+.image-section-Step img {
+    width: 400px; /* Set a fixed width for each image */
+    height: 200px;
+    border-radius: 10px;
+    
+}
+
+.text-content {
+    max-width: 1000px; /* Control the width of the text */
+    max-height: 10000px;
+}
+
+.text-content h2 {
+    font-size: 2.5rem; /* Increase font size */
+    text-align: center; /* Center align the heading */
+    width: 100%; /* Take full width for centering */
+    margin: 0; /* Remove any default margin */
+}
+
+.text-content p {
+
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: left;
+}
+
+.comments-1 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    max-width: 100%;
     height: auto;
-    max-width: 100%; /* Images will scale down responsively if needed */
+    margin-left: 20px; /* Space between image and text */
+
+}
+
+.comments-2 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    margin-left: 60px; /* Space between image and text */
 }
