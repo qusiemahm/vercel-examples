@@ -1154,13 +1154,7 @@ p {
 }
 
 
-.image-container img {
-    max-width: 70%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    
-}
+
 
 .embracing-differences-section p {
     font-size: 1.2rem;
@@ -1192,14 +1186,15 @@ p {
 .embracing-differences-wrapper {
     display: flex;
     gap: 30px;
-    align-items: flex-start;
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .image-container {
     flex: 1;
-    
+    display: flex;
+    justify-content: center; /* Center the image horizontally if needed */
 }
 
 .image-container img {
@@ -1291,12 +1286,14 @@ p {
     height: 400px; /* Set a fixed height */
 }
 
-.image-container img {
+.image-container img { 
     width: 100%;
-    height: 500px;
+    height: 550px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     position: absolute;
+    margin-top: -40px; /* Adjust this value to move the image up */
+
 }
 
 .image-container img:nth-child(1) {
@@ -1394,7 +1391,7 @@ p {
 /* Styling for Employee Insights Section */
 .employee-insights {
     text-align: center;
-    padding: 20px;
+    padding: 05px;
 }
 
 /* Testimonial Container Styling */
@@ -1410,10 +1407,11 @@ p {
     flex: 1;
     display: flex;
     justify-content: center;
+    width: 500px;
 }
 
 .testimonial-image {
-    width: 670px; /* Adjust width as needed */
+    width: 500px; /* Adjust width as needed */
     height: 250px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -1421,10 +1419,10 @@ p {
 
 /* Text Styling */
 .testimonial-text {
-    max-width: 700px;
-    font-size: 14px;
+    max-width: 500px;
+    font-size: 1px;
     color: #333;
-    line-height: 1.6;
+    line-height: 1;
     text-align: justify;
 }
 
@@ -1463,7 +1461,7 @@ p {
 }
 
 .image-section-Step img {
-    width: 400px; /* Set a fixed width for each image */
+    width: 600px; /* Set a fixed width for each image */
     height: 200px;
     border-radius: 10px;
     
@@ -1506,4 +1504,12 @@ p {
     max-width: 100%;
     height: auto;
     margin-left: 60px; /* Space between image and text */
+}
+
+.aces-at-a-glance h2 {
+    font-size: 2.2rem; /* Adjust to make the heading smaller */
+}
+
+.aces-at-a-glance p {
+    font-size: 1.1rem; /* Adjust to make the paragraph text smaller */
 }
