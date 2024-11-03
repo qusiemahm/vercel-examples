@@ -387,6 +387,7 @@ section {
 .text-box ul {
     list-style-type: none;
     padding-left: 0;
+    text-align: left;
 }
 
 .text-box ul li {
@@ -425,10 +426,21 @@ section {
 
 .left-column {
     flex: 1;
+
+}
+.left-column p {
+    display: flex;
+    padding-left: 250px;
+    align-items: center; /* Centers text vertically */
 }
 
 .right-column {
     flex: 1;
+}
+
+.right-column p {
+    display: flex;
+    align-items: center; /* Centers text vertically */
 }
 
 /* Responsive Design */
@@ -1391,7 +1403,6 @@ p {
 /* Styling for Employee Insights Section */
 .employee-insights {
     text-align: center;
-    padding: 05px;
 }
 
 /* Testimonial Container Styling */
@@ -1399,7 +1410,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 /* Image Wrapper Styling */
@@ -1407,7 +1418,23 @@ p {
     flex: 1;
     display: flex;
     justify-content: center;
-    width: 500px;
+    width: 100px;
+}
+
+/* Image Wrapper Styling */
+.testimonial-image-wrapper-1 {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+}
+
+.testimonial-image-wrapper-1,
+.testimonial-text {
+    margin: 0; /* Removes any default margin to eliminate gap */
+}
+
+.testimonial-text {
+    flex: 1; /* Allows text to take available space if needed */
 }
 
 .testimonial-image {
@@ -1419,8 +1446,15 @@ p {
 
 /* Text Styling */
 .testimonial-text {
-    max-width: 500px;
-    font-size: 1px;
+    max-width: 350px;
+    color: #333;
+    line-height: 1;
+    text-align: justify;
+}
+/* Text Styling */
+.testimonial-text P {
+    max-width: 350px;
+    font-size: 12px;
     color: #333;
     line-height: 1;
     text-align: justify;
@@ -1493,7 +1527,7 @@ p {
     align-items: center;
     max-width: 100%;
     height: auto;
-    margin-left: 20px; /* Space between image and text */
+    margin-left: 180px; /* Space between image and text */
 
 }
 
@@ -1503,7 +1537,7 @@ p {
     align-items: center;
     max-width: 100%;
     height: auto;
-    margin-left: 60px; /* Space between image and text */
+    margin-left: 220px; /* Space between image and text */
 }
 
 .aces-at-a-glance h2 {
