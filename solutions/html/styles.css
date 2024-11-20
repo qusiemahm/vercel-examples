@@ -1,3 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container222 {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.container222 h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.container222 p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.metrics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distribute items evenly */
+    margin-top: 20px;
+}
+
+.metric {
+    text-align: right; /* Center-align the text */
+    flex: 1 1 150px; /* Flexible size for responsiveness */
+    max-width: 550px; /* Set a smaller width for compact cards */
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #fff; /* White background */
+}
+
+.metric h3 {
+    font-size: 0.8rem; /* Small heading font size */
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0; /* Adjusts the spacing above and below */
+    line-height: 8; /* Removes additional space between lines */
+}
+
+.metric p {
+    font-size: 0.7rem; /* Very small descriptive text */
+    color: #555;
+    line-height: 0.01; /* Ensures no extra spacing between lines */
+    margin: 5px 0; /* Keeps a small space above and below paragraphs */
+    max-width: 100px;
+}
+
+.icon {
+    width: 300px !important;
+    height: 1500px; /* Increase icon height */
+    margin: 0 auto 15px; /* Add spacing below */
+    border-radius: 50%; /* Keep circular shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #f0f0f0; /* Light gray background for contrast */
+}
+
+.icon img {
+    max-width: 100%;
+    height: auto; /* Ensure the image scales proportionally */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .icon {
+        width: 120px; /* Slightly smaller icons on smaller screens */
+        height: 120px;
+    }
+}
+
+
 /* General Reset */
 * {
     margin: 0;
@@ -236,83 +323,82 @@ body {
     line-height: 1.6;
 }
 
-/* Career Section */
+
+/* Career Section - Compact */
 .career-section {
-    text-align: center;
-    padding: 60px 20px;
-    background-color:#f4f4f4; /* Light background for a modern feel */
+    text-align: center; /* Center-align for balance */
+    padding: 20px 10px; /* Reduce padding */
+    background-color: #f4f4f4; /* Light background */
 }
 
 .career-section h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem; /* Smaller font size */
     color: #222;
-    margin-bottom: 40px;
+    margin-bottom: 20px; /* Reduce bottom margin */
     font-weight: bold;
 }
 
 .career-section h2 a {
     text-decoration: none;
     color: #222;
+    transition: color 0.3s ease;
 }
 
 .career-section h2 a:hover {
-    text-decoration: none;
+    color: #FF8C00; /* Highlight on hover */
+    text-decoration: underline;
 }
 
 .career-section .highlight {
     color: #FF8C00; /* Highlight color */
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .career-section {
+        padding: 10px 5px; /* Further reduce padding on small screens */
+    }
+
+    .career-section h2 {
+        font-size: 1.25rem; /* Reduce heading size */
+    }
+}
+
 /* Grid Layout */
 .career-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 70px;
-    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 /* Individual Career Items */
 .career-item {
-    background-color:#f4f4f4; /* Slightly transparent background */
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-    text-decoration: none;
+    display: flex; /* Ensure the inner content aligns properly */
+    flex-direction: column; /* Stack the content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    margin: auto; /* Optional: Center the div itself within its parent */
+    text-align: center; /* Center the text */
+    height: 100%; /* Optional: Ensure full height if needed */
 }
 
 .career-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    max-height: 200px;
+    object-fit: cover;
 }
-
 .career-item h3 {
-    font-size: 1.6rem;
-    color: #333;
-    margin-bottom: 15px;
+    font-size: 100.0rem; /* Slightly smaller heading */
 }
 
 .career-item p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 20px;
-    line-height: 1.5;
+    font-size: 0.9rem; /* Smaller paragraph text */
 }
 
-/* Career Link */
 .career-link {
-    font-size: 1.1rem;
-    color:rgb(245, 182, 14);
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-flex;
-    align-items: center;
-    transition: color 0.3s ease;
+    font-size: 0.9rem; /* Smaller link text */
 }
+
 
 .career-link .arrow {
     margin-left: 5px;
@@ -1401,7 +1487,7 @@ p {
 }
 
 /* Styling for Employee Insights Section */
-.employee-insights {
+.employee-insights-2 {
     text-align: center;
 }
 
@@ -1547,3 +1633,42 @@ p {
 .aces-at-a-glance p {
     font-size: 1.1rem; /* Adjust to make the paragraph text smaller */
 }
+
+#embracing-differences-card {
+    padding-left: 200px; /* Add padding inside the card */
+    margin-left: 20px auto; /* Space around the card */
+    grid-column: 1 / -1; /* Make the card span across all columns */
+    text-align: ri; /* Center-align the content */
+    background-color: #f9f9f9; /* Optional: background styling */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+
+
+
+
+.container2 {
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+    background-color: white;
+  }
+  
+  .card {
+    text-align: center;
+    width: 200px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .card h3 {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #ff9900;
+  }
+  
